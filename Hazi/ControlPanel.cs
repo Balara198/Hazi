@@ -6,13 +6,38 @@ using System.Threading.Tasks;
 
 namespace Hazi
 {
-    class ControlPanel
+    class ControlPanel : Subject
     {
-        private bool simpleAlarmActive = false;
-        private bool fireAlarmActive = false;
+        private bool simaRiasztoAktiv = false;
+        private bool tuzjelzoRiasztoAktiv = false;
 
-        private List<DateTime> simpleAlarmLog;
-        private List<DateTime> fireAlarmLog;
+        private List<DateTime> simaRiasztoLog;
+        private List<DateTime> tuzjelzoRiasztoLog;
+
+        public bool getSimaRiasztoAktiv()
+        {
+            return simaRiasztoAktiv;
+        }
+
+        public bool getTuzjelzoRiasztoAktiv()
+        {
+            return tuzjelzoRiasztoAktiv;
+        }
+
+        public void riaszt(string opcio)
+        {
+            switch (opcio)
+            {
+                case "sima":
+                    break;
+                case "tuz":
+                    break;
+                case "isis":
+                    break;
+                default:
+                    break;
+            }
+        }
 
     }
 }
