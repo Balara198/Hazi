@@ -11,18 +11,8 @@ namespace Hazi
         private bool simpleAlarmActive = false;
         private bool fireAlarmActive = false;
 
-        private List<object> simpleAlarmHandlers;
-        private List<object> fireAlarmHandlers;
-
         private List<DateTime> simpleAlarmLog;
         private List<DateTime> fireAlarmLog;
 
-        public void activateSimpleAlarm()
-        {
-            foreach (object handler in simpleAlarmHandlers)
-            {
-                handler.activate()
-            }
-        }
     }
 }
